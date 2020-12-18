@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class RotateList {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
