@@ -20,7 +20,7 @@ public class RotateList {
             temp = temp.next;
         }
     }
-    public static ListNode rotateRight(ListNode head, int k) {
+    private static ListNode rotateRight(ListNode head, int k) {
         // handle special case length is 0 or 1
         if (head == null || head.next == null) return head;
 
@@ -57,8 +57,13 @@ public class RotateList {
 }
 
 class ListNode {
-    public ListNode(int num) {
+    ListNode(int num) {
         this.num = num;
+    }
+
+    ListNode(int num, ListNode next) {
+        this.num = num;
+        this.next = next;
     }
 
     int num;
